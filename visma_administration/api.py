@@ -362,7 +362,7 @@ class _Pdata(object):
             else:
                 raise Exception("Neither AdkGetDouble or AdkGetNumeric is available")
         elif _type == self.api.ADK_FIELD_TYPE.eBool:
-            return self.api.AdkGetBool(*default_arguments, Boolean(0))[1]
+            return self.api.AdkGetBool(*default_arguments, Boolean(False))[1]
         elif _type == self.api.ADK_FIELD_TYPE.eDate:
             return self.api.AdkGetDate(*default_arguments, DateTime(0))[1]
 
